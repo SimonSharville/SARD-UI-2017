@@ -1204,7 +1204,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: inherit;
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   text-decoration: none;
-  margin-right: 3px; }
+  margin-right: 3px;
+  border-radius: 20px; }
 
 .btn:last-of-type {
   margin-right: 0px; }
@@ -1277,35 +1278,35 @@ button:hover {
   color: white !important; }
 
 .btn-primary:active {
-  background-color: black !important; }
+  background-color: #001a1a !important; }
 
 .btn-primary:focus {
-  background-color: black !important; }
+  background-color: #001a1a !important; }
 
 .btn-success {
-  background-color: #145214;
+  background-color: #1f7a1f;
   color: white !important; }
 
 .btn-success:visited {
-  background-color: #145214;
+  background-color: #1f7a1f;
   color: white !important; }
 
 .btn-success:hover {
-  background-color: #0a290a;
+  background-color: #145214;
   color: white !important; }
 
 .btn-success:active {
-  background-color: #0a290a !important; }
+  background-color: #145214 !important; }
 
 .btn-success:focus {
-  background-color: #0a290a !important; }
+  background-color: #145214 !important; }
 
 .btn-info {
-  background-color: #002b85;
+  background-color: #00349f;
   color: white !important; }
 
 .btn-info:visited {
-  background-color: #002b85;
+  background-color: #00349f;
   color: white !important; }
 
 .btn-info:hover {
@@ -1319,40 +1320,40 @@ button:hover {
   background-color: #000045 !important; }
 
 .btn-warning {
-  background-color: black;
-  color: #FFB200 !important; }
+  background-color: #e6b800;
+  color: black !important; }
 
 .btn-warning:visited {
-  background-color: black;
-  color: #FFB200 !important; }
+  background-color: #e6b800;
+  color: black !important; }
 
 .btn-warning:hover {
-  background-color: black;
-  color: white !important; }
+  background-color: #cca300;
+  color: black !important; }
 
 .btn-warning:active {
-  background-color: black !important; }
+  background-color: #cca300 !important; }
 
 .btn-warning:focus {
-  background-color: black !important; }
+  background-color: #cca300 !important; }
 
 .btn-danger {
-  background-color: black;
-  color: #BF0000 !important; }
+  background-color: #e60000;
+  color: white !important; }
 
 .btn-danger:visited {
-  background-color: black;
-  color: #BF0000 !important; }
+  background-color: #e60000;
+  color: white !important; }
 
 .btn-danger:hover {
-  background-color: black;
+  background-color: #cc0000;
   color: white !important; }
 
 .btn-danger:active {
-  background-color: black !important; }
+  background-color: #cc0000 !important; }
 
 .btn-danger:focus {
-  background-color: black !important; }
+  background-color: #cc0000 !important; }
 
 .btn-link {
   -webkit-box-shadow: none;

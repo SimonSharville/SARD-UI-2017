@@ -817,6 +817,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     text-decoration:none;
     margin-right:3px;
+    border-radius:20px;
   }
 
   .btn:last-of-type { margin-right:0px; }
@@ -880,7 +881,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Bootstrap Specific Button Styles
 
-.btn-default { background-color: darken($turq, 0%); color:white!important;}
+.btn-default { 
+  // background: #00b2b2; /* Old browsers */
+  // background: -moz-linear-gradient(-45deg, #00b2b2 0%, #007f7d 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(-45deg, #00b2b2 0%,#007f7d 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(135deg, darken($turq, 0%),darken($turq, 20%)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', endColorstr='#007f7d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: darken($turq, 0%); 
+  color:white!important;
+}
 .btn-default:visited { background-color: darken($turq, 0%); color:white!important;}
 .btn-default:hover { background-color: darken($turq, 10%); color:white!important;}
 .btn-default:active,  { background-color: darken($turq, 20%)!important;}
@@ -889,32 +898,32 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .btn-primary { background-color: darken($teal, 5%); color:white!important;}
 .btn-primary:visited { background-color: darken($teal, 5%); color:white!important;}
 .btn-primary:hover { background-color: darken($teal, 10%); color:white!important;}
-.btn-primary:active,  { background-color: darken($teal, 20%)!important;}
-.btn-primary:focus { background-color: darken($teal, 20%)!important;}
+.btn-primary:active,  { background-color: darken($teal, 10%)!important;}
+.btn-primary:focus { background-color: darken($teal, 10%)!important;}
 
-.btn-success { background-color: darken($success, 30%); color:white!important;}
-.btn-success:visited { background-color: darken($success, 30%); color:white!important;}
-.btn-success:hover { background-color: darken($success, 40%); color:white!important;}
-.btn-success:active,  { background-color: darken($success, 40%)!important;}
-.btn-success:focus { background-color: darken($success, 40%)!important;}
+.btn-success { background-color: darken($success, 20%); color:white!important;}
+.btn-success:visited { background-color: darken($success, 20%); color:white!important;}
+.btn-success:hover { background-color: darken($success, 30%); color:white!important;}
+.btn-success:active,  { background-color: darken($success, 30%)!important;}
+.btn-success:focus { background-color: darken($success, 30%)!important;}
 
-.btn-info { background-color: darken($blue, 10%); color:white!important;}
-.btn-info:visited { background-color: darken($blue, 10%); color:white!important;}
+.btn-info { background-color: darken($blue, 5%); color:white!important;}
+.btn-info:visited { background-color: darken($blue, 5%); color:white!important;}
 .btn-info:hover { background-color: darken($ink, 10%); color:white!important;}
 .btn-info:active,  { background-color: darken($ink, 10%)!important;}
 .btn-info:focus { background-color: darken($ink, 10%)!important;}
 
-.btn-warning { background-color: darken(black, 10%); color:$yellow!important;}
-.btn-warning:visited { background-color: darken(black, 10%); color:$yellow!important;}
-.btn-warning:hover { background-color: darken(black, 20%); color:white!important;}
-.btn-warning:active,  { background-color: darken(black, 20%)!important;}
-.btn-warning:focus { background-color: darken(black, 20%)!important;}
+.btn-warning { background-color: darken($warning, 5%); color:black!important;}
+.btn-warning:visited { background-color: darken($warning, 5%); color:black!important;}
+.btn-warning:hover { background-color: darken($warning, 10%); color:black!important;}
+.btn-warning:active,  { background-color: darken($warning, 10%)!important;}
+.btn-warning:focus { background-color: darken($warning, 10%)!important;}
 
-.btn-danger { background-color: darken(black, 10%); color:$red!important;}
-.btn-danger:visited { background-color: darken(black, 10%); color:$red!important;}
-.btn-danger:hover { background-color: darken(black, 20%); color:white!important;}
-.btn-danger:active,  { background-color: darken(black, 20%)!important;}
-.btn-danger:focus { background-color: darken(black, 20%)!important;}
+.btn-danger { background-color: darken($danger, 5%); color:white!important;}
+.btn-danger:visited { background-color: darken($danger, 5%); color:white!important;}
+.btn-danger:hover { background-color: darken($danger, 10%); color:white!important;}
+.btn-danger:active,  { background-color: darken($danger, 10%)!important;}
+.btn-danger:focus { background-color: darken($danger, 10%)!important;}
 
 .btn-link{
   -webkit-box-shadow: none;
