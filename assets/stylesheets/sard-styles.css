@@ -92,6 +92,9 @@
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0625 = 1px */
 /* 16 * 0.125 = 2px */
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal; }
+
 h1 {
   font-family: 'robotothin', Helvetica, Arial, Sans-serif;
   font-size: 4.000em;
@@ -100,13 +103,13 @@ h1 {
   margin-left: -4px; }
 
 h2 {
-  font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
   font-size: 3.000em;
   margin-top: 0;
   margin-left: -3px; }
 
 h3 {
-  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 2.000em;
   margin-top: 0;
   margin-left: -2px; }
@@ -118,7 +121,7 @@ h4 {
 
 h5 {
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-  font-size: 1.000em; }
+  font-size: 1.250em; }
 
 h6 {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -139,6 +142,17 @@ li p {
   text-indent: -1.25em;
   margin-bottom: 0.5em;
   line-height: 1.3em; }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3.000em; }
+  h2 {
+    font-size: 2.250em; }
+  h3 {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.750em; }
+  h4 {
+    font-size: 1.500em; } }
 
 strong {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -714,7 +728,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-radius: 0px;
   border-color: white; }
   .panel-heading h3 {
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
     font-size: 1.500em; }
 
 .panel-body, .button {
@@ -1927,40 +1940,6 @@ img.user-guide-cover {
   position: relative;
   top: 3px;
   color: #00B2B2; }
-
-#index-sidebar-page .page-header .profile-image {
-  padding-right: 10px; }
-
-#index-sidebar-page .page-header .profile-image img {
-  border-radius: 50%; }
-
-#index-sidebar-page .page-header .user-name {
-  font-size: 20px;
-  font-family: 'robotobold';
-  padding-top: 10px;
-  padding-left: 115px; }
-
-#index-sidebar-page .page-header .page-title {
-  font-family: 'robotothin';
-  font-size: 60px;
-  line-height: 50px; }
-
-#ui-kop .page-header .profile-image {
-  padding-right: 10px; }
-
-#ui-kop .page-header .profile-image img {
-  border-radius: 50%; }
-
-#ui-kop .page-header .user-name {
-  font-size: 20px;
-  font-family: 'robotobold';
-  padding-top: 10px;
-  padding-left: 115px; }
-
-#ui-kop .page-header .page-title {
-  font-family: 'robotothin';
-  font-size: 60px;
-  line-height: 50px; }
 
 .sidebar {
   z-index: 100;

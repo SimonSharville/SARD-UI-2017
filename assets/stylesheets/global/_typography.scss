@@ -22,7 +22,9 @@
     $link-active:      $purple;
     
 
-
+h1, h2, h3, h4, h5, h6, p{
+  font-weight:normal;
+}
   
   h1 {
     font-family: 'robotothin', Helvetica, Arial, Sans-serif;
@@ -33,14 +35,14 @@
   }
   
   h2 {
-    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
     font-size: 3.000em;
     margin-top:0;
     margin-left:-3px;
   }
   
   h3 {
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 2.000em;
     margin-top:0;
     margin-left:-2px;
@@ -54,7 +56,7 @@
 
   h5 {
     font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-    font-size: 1.000em;
+    font-size: 1.250em;
   }
 
   h6 {
@@ -80,6 +82,20 @@
     margin-bottom:0.5em;
     line-height: 1.3em;
   }
+
+// Small screens
+@media (max-width: 767px) {
+  h1{ font-size: 3.000em;}
+  h2{ 
+    // font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 2.250em;
+  }
+  h3{
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.750em;
+  }
+  h4{font-size: 1.500em;}
+} 
 
 
 
