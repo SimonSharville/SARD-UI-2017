@@ -271,6 +271,18 @@ h1, h2, h3, h4, h5, h6, p{
     
   }
 
+  .link-arrow   { // this puts an arrow before any links with this class
+      a:before{
+      font-family: 'Glyphicons Halflings';
+      content: "\e131" ;
+      padding-right:5px;
+      // vertical-align:middle;
+      position:relative;
+      // top:3px;
+      color:$client-colour;
+    }
+  }
+
 
   .list-group{ // Used in Dashboard/Support Docs panel .doc-list
     margin-bottom:0px;

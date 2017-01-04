@@ -131,7 +131,9 @@
         </div> <!-- END Row -->
         <div class="row perf"></div> 
       
-
+    <h1>Lists</h1>
+    <h4>Ther are various types of lists, most but not all go within a Table.</h4>
+    <h4>&nbsp;</h4>
 
 
 
@@ -140,9 +142,9 @@
 
           <!-- Tabs -->
           <ul class="nav nav-tabs nav-justified" role="tablist">
-            <li role="presentation" class="active"><a href="#status-alerts" aria-controls="status-alerts" role="tab" data-toggle="tab">Status Alerts</a></li>
+            <li role="presentation" class="active"><a href="#lists-status-alerts" aria-controls="lists-status-alerts" role="tab" data-toggle="tab">Status Alert Lists</a></li>
 
-            <li role="presentation"><a href="#table-lists" aria-controls="table-lists" role="tab" data-toggle="tab">Table Lists</a></li>
+            <li role="presentation"><a href="#variable-lists" aria-controls="variable-lists" role="tab" data-toggle="tab">Variable Lists</a></li>
 
 
           </ul> <!-- END Tabs -->
@@ -151,16 +153,16 @@
           <!-- Tabs Contents-->
           <div class="tab-content">
 
-            <div role="tabpanel" class="tab-pane active" id="status-alerts">
+            <div role="tabpanel" class="tab-pane active" id="lists-status-alerts">
               <div class="row row-indent">
                 <div class="col-xs-12">
                   <!-- Panels =============================================================== -->
                   <div class="row">
                     <div class="col-xs-12">
-                      <h1>Status Alerts</h1>
-                      <h4>This sections shows status alerts as well as tool tips and popovers.</h4>
-                      <h4>These are all within a Panel, BUT NOT within a Table.</h4>
-                      <h4>&nbsp;</h4>
+                      <h1>Status Alert Lists</h1>
+                      <h4>This shows Status Alerts within a list.</br>
+                        They can be within a Panel, Table or both.</h4>
+                      <p>&nbsp;</p>
                     </div> <!-- END Column -->
                   </div> <!-- END Row -->
                   
@@ -195,7 +197,7 @@
                   
                        <div class="panel panel-default">
                         <div class="panel-heading">
-                          <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
+                          <h3 class="panel-title">Panel Status Alerts<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
                         </div>
                         <div class="panel-body">
                           <div class="notice status status-success">
@@ -240,42 +242,77 @@
                     </div> <!-- END Column -->
                   
                     <div class="col-sm-6 col-md-6">
-                      <h4>Tooltips</h4>
-                      <p>Popovers are added by using a link with NO url, like this:</br>
-                        <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
-                      </p>
-                      <p>Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</br>
-                        To avoid visual clutter all are set to float right of the list item they are within.
-                      </p>
+                      <div class="panel panel-default table-responsive">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Table Status Alerts</h3>
+                          </div>
+                          <div class="panel-body panel-table">
+                            <table class="table table-hover link-icon">
+                              <thead>
+                                <tr>
+                                  <th class="status-col"></th>
+                                  <th>Title</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="status-col">
+                                    <div class="status status-alert"></div>
+                                  </td>
+                                  <td>
+                                    <p><a href="#">Appraisal Jul 2016</a></p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="status-col">
+                                    <div class="status status-danger"></div>
+                                  </td>
+                                  <td>
+                                    <p><a href="#">Appraisal Aug 2016</a></p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="status-col">
+                                    <div class="status status-success"></div>
+                                  </td>
+                                  <td>Title with no link</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div><!-- END Panel body -->
+                        </div><!-- END Panel -->
                     </div> <!-- END Column -->
-                  
                   
                   </div> <!-- END Row -->
                   
+                  <!-- ================================================================================== -->
+                  <div class="row">
+                  <div class="row perf"></div> <!-- •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+                  </div> <!-- END Row -->
                   
-                  
-                  
-                </div>
-              </div>
-            </div> <!-- END tabpanel-->
-
-
-            <div role="tabpanel" class="tab-pane fade" id="table-lists">
-              <div class="row row-indent">
-                <div class="col-xs-12">
-                  <!-- Buttons =============================================================== -->
                   <div class="row">
                     <div class="col-xs-12">
-                      <h1>Table Lists</h1>
-                      <h4>This sections shows status alerts as well as tool tips and popovers</h4>
-                      <h4>&nbsp;</h4>
+                      <h3>Panel Status Alerts</h6>
+                  <p>
+                  When creating a list like above, the list sit’s within a panel. The panel body contains a series of DIVs, one for each list item, in this case with a class of notice.</br>
+                  To add the Status Alert, simply add the following classes to any div: status status-STATE. i.e.</br>
+                  <code>
+                    &lt;div class="notice status status-success"&gt;</br>
+                      &nbsp; &lt;a href=""&gt;</br>
+                        &nbsp; &nbsp; &lt;h6&gt;Status Success&lt;/h6&gt;</br>
+                        &nbsp; &nbsp; &lt;p&gt;This is an example of a Status Success.&lt;/p&gt;</br>
+                      &nbsp; &lt;/a&gt;</br>
+                    &lt;/div&gt;
+                  </code>
+                  </p>
+                  <p>&nbsp;</p>
                     </div> <!-- END Column -->
                   </div> <!-- END Row -->
                   
-                  
-                  
                   <div class="row">
                     <div class="col-xs-12">
+                      <h3>Table Status Alerts</h3>
+                      
                       <p>When creating a table that contains Status Lights  and Link Icons you will need to add certain classes.</p>
                       <p>
                         To add Status Icons within a table, you should add <code>.status-col</code> to every &lt;th&gt; and &lt;td&gt; within that column. This will make that column 5% the table width and remove the excess padding from those cells. 
@@ -296,7 +333,7 @@
                       </p>
                         <div class="panel panel-default table-responsive">
                           <div class="panel-heading">
-                            <h3 class="panel-title">Table List within a Panel</h3>
+                            <h3 class="panel-title">Table Status Alerts</h3>
                           </div>
                           <div class="panel-body panel-table">
                             <table class="table table-hover link-icon">
@@ -341,7 +378,7 @@
                       <code>
                         &lt;div class="panel panel-default table-responsive"&gt;</br>
                           &nbsp; &lt;div class="panel-heading"&gt;</br>
-                            &nbsp;&nbsp; &lt;h3 class="panel-title"&gt;Table List within a Panel&lt;/h3&gt;</br>
+                            &nbsp;&nbsp; &lt;h3 class="panel-title"&gt;Table Status Alerts&lt;/h3&gt;</br>
                           &nbsp; &lt;/div&gt;</br>
                           &nbsp; &lt;div class="panel-body panel-table"&gt;</br>
                             &nbsp; &nbsp; &lt;table class="table table-hover <strong>link-icon</strong>"&gt;</br>
@@ -382,13 +419,97 @@
                       </code>
                   
                       <p>&nbsp;</p>
+                      <h3>Example</h3>
+                  
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Appraisals</h3>
+                              </div>
+                  
+                              <div class="panel-body panel-table table-responsive">
+                                <table class="table table-hover link-icon">
+                                  <thead>
+                                    <tr>
+                                      <th class="status-col"></th>
+                                      <th>Title</th>
+                                      <th>Date</th>
+                                      <th>Docs</th>
+                                      <th>Portfolio</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="status-col">
+                                        <div class="status status-alert"></div>
+                                      </td>
+                                      <td><p><a href="#">Appraisal Jul 2016</a></p></td>
+                                      <td>01 Jul 2016</td>
+                                      <td><p><a href="#" target="_blank">AppraisalPDF </a></p>
+                                      <p><a href="#" target="_blank">PortfolioPDF </a></p>
+                                      <p><a href="#" target="_blank">Medical Educators Framework Areas PDF</a></p>
+                                      <p><a href="#" target="_blank">SummaryPDF </a></p></td>
+                                      <td><p><a href="#">Portfolio Jul 2016</a></p></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="status-col">
+                                        <div class="status status-danger"></div></td>
+                                      <td>Title</td>
+                                      <td>Date</td>
+                                      <td>Doc</td>
+                                      <td>Portfolio</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="status-col">
+                                        <div class="status status-success"></div></td>
+                                      <td>Title</td>
+                                      <td>Date</td>
+                                      <td>Doc</td>
+                                      <td>Portfolio</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="status-col">
+                                        <div class="status status-alert"></div></td>
+                                      <td>Title</td>
+                                      <td>Date</td>
+                                      <td>Doc</td>
+                                      <td>Portfolio</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div><!-- END Panel Body-->
+                              <div class="perf-wht"></div>
+                              <div class="panel-body">
+                                <button type="button" class="btn btn-default">Button Default</button>
+                              </div>
+                            </div> <!-- END Panel -->
                       <p>
                         Note: to make the table responsive the table needs to be wrapped with a <code>.table-responsive</code> class.</br>
                         Here, that class is added to the containing panel.
                       </p>
                             
-                          </div> <!-- END column-->
-                        </div> <!-- END Row -->
+                    </div> <!-- END column -->
+                  </div> <!-- END Row -->
+                  
+                  
+                  
+                </div>
+              </div>
+            </div> <!-- END tabpanel-->
+
+
+            <div role="tabpanel" class="tab-pane fade" id="variable-lists">
+              <div class="row row-indent">
+                <div class="col-xs-12">
+                  <!-- Buttons =============================================================== -->
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h1>Variable Lists</h1>
+                      <h4>Bootstap tables spread the columns evenly across the table, someine however you may need to set the column widths to be more flexible. To do this we have come up with Variable column widths for a table. </h4>
+                      <h4>&nbsp;</h4>
+                    </div> <!-- END Column -->
+                  </div> <!-- END Row -->
+                  
+                  
                   
                   
                 </div>
@@ -436,9 +557,14 @@
     <script src="../../assets/javascripts/bootstrap.min.js"></script>
     <script src="../../assets/javascripts/tooltip.js"></script>
 
+    <!-- Added SARD Scripts -->
+    
+    
+    <!-- http://stackoverflow.com/questions/33079451/set-active-tab-in-tab-nav-coming-from-another-link-bootstrap -->
+    <script src="../../assets/javascripts/tab-nav.js"></script>
+    
     <!-- http://www.paulund.co.uk/how-to-create-an-animated-scroll-to-top-with-jquery -->
     <script type="text/javascript" src="../../assets/javascripts/smoothscroll.js"></script>
-
 
 
   </body>
