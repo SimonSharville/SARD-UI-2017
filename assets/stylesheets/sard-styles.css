@@ -305,6 +305,13 @@ ul {
 .link-icon a:visited:before {
   color: #00B2B2; }
 
+.link-arrow a:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e131";
+  padding-right: 5px;
+  position: relative;
+  color: #00B2B2; }
+
 .list-group {
   margin-bottom: 0px; }
   .list-group .group {
