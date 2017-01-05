@@ -1940,13 +1940,12 @@ img.user-guide-cover {
   font-size: 60px;
   line-height: 50px; }
 
-#index-page .link-arrow a:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e131";
-  padding-right: 5px;
-  position: relative;
-  top: 3px;
-  color: #00B2B2; }
+#index-page .index-list ul {
+  padding-left: 20px;
+  font-size: 2.000em; }
+
+#index-page .index-list li {
+  font-size: 0.750em; }
 
 .sidebar {
   z-index: 100;
