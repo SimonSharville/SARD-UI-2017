@@ -8,19 +8,25 @@
 // page specific items here =========================================
 
 
-.link-arrow   { // this puts an arrow bwfore any links with this class
-      a:before{
-      font-family: 'Glyphicons Halflings';
-      content: "\e131" ;
-      padding-right:5px;
-      // vertical-align:middle;
-      position:relative;
-      top:3px;
-      color:$turq;
-    }
+// .link-arrow   { // this puts an arrow bwfore any links with this class
+//       a:before{
+//       font-family: 'Glyphicons Halflings';
+//       content: "\e131" ;
+//       padding-right:5px;
+//       // vertical-align:middle;
+//       position:relative;
+//       top:3px;
+//       color:$turq;
+//     }
+//   }
+.index-list{
+  ul{ 
+    padding-left:20px;
+    font-size: 2.000em;
   }
+  li{ font-size: 0.750em;}
+}
 
-  
 // page specific items here =========================================
 
 } // END index
