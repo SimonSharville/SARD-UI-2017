@@ -132,8 +132,6 @@ p {
   font-size: 1.000em; }
 
 .table p {
-  padding-left: 1.25em;
-  text-indent: -1.25em;
   margin-bottom: 0.5em;
   line-height: 1.3em; }
 
@@ -154,6 +152,7 @@ li p {
   h4 {
     font-size: 1.500em; } }
 
+/*  TEXT Styles ========================================================== */
 strong {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   font-weight: normal; }
@@ -163,6 +162,9 @@ strong {
 
 .red {
   color: #BF0000; }
+
+.center {
+  text-align: center; }
 
 /*  TEXT LINK Styles ========================================================== */
 a {
@@ -295,6 +297,14 @@ a:hover, a:focus .glyphicon-info-sign {
 ul {
   list-style-type: none; }
 
+p.link-icon {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+.link-icon p {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
 .link-icon a:link:before {
   font-family: 'Glyphicons Halflings';
   content: "\e131";
@@ -304,6 +314,10 @@ ul {
 
 .link-icon a:visited:before {
   color: #00B2B2; }
+
+.link-arrow p {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
 
 .link-arrow a:before {
   font-family: 'Glyphicons Halflings';
@@ -361,6 +375,15 @@ a.link-arrow:before {
 
 .box-content ul {
   padding-left: 10px; }
+
+.glyphicon-ok {
+  color: #359E00; }
+
+.glyphicon-remove {
+  color: #BF0000; }
+
+.glyphicon-minus {
+  color: #403D3D; }
 
 * {
   -webkit-font-smoothing: antialiased !important;

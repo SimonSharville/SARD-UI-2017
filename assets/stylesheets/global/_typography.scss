@@ -71,8 +71,8 @@ h1, h2, h3, h4, h5, h6, p{
   }
 
   .table p { // This adjust the spacing and endents of multi line links in a table
-    padding-left: 1.25em;
-    text-indent:-1.25em;
+    // padding-left: 1.25em;
+    // text-indent:-1.25em;
     margin-bottom:0.5em;
     line-height: 1.3em;
   }
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p{
   h4{font-size: 1.500em;}
 } 
 
-
+/*  TEXT Styles ========================================================== */
 
   strong{ 
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6, p{
   .green { color:$green;}
   .red { color:$red;}
 
+  .center{text-align:center;}
 
 /*  TEXT LINK Styles ========================================================== */
 
@@ -258,7 +259,15 @@ h1, h2, h3, h4, h5, h6, p{
     list-style-type: none;
   }
 
+  p.link-icon{
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
   .link-icon{ // This places the arrow icon in front of a text link
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
     a:link:before{
       font-family: 'Glyphicons Halflings';
       content: "\e131" ;
@@ -267,11 +276,13 @@ h1, h2, h3, h4, h5, h6, p{
       color:$client-colour;
     }
     a:visited:before{color:$client-colour;}
-
     
   }
 
   .link-arrow   { // this puts an arrow before any links with this class
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
       a:before{
       font-family: 'Glyphicons Halflings';
       content: "\e131" ;
@@ -354,3 +365,9 @@ h1, h2, h3, h4, h5, h6, p{
     }
     ul{ padding-left:10px; }
   }
+
+  // Glyphicons =========================================================
+  .glyphicon-ok{color:$green;}
+  .glyphicon-remove{color:$red;}
+  .glyphicon-minus{color:$grey16;}
+
