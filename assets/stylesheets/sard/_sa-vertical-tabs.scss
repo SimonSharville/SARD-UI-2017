@@ -1,0 +1,37 @@
+// ====================================================================================
+
+// Sidebar styles =====================================
+
+// http://www.codeply.com/go/rv3Cvr0lZ4
+
+
+.vertical-tabs{
+
+
+
+  .tab-nav{
+    padding-left:0px;
+    background:yellow;
+    
+    ul{
+      background:red;
+    }
+
+    li{
+      background:green;    
+    }
+
+  }
+
+  .tab-content{
+    background:blue;
+    min-height: 100%;
+  }
+
+  .tab-pane{
+    background:orange;
+    min-height: 100%;
+
+  }
+
+} // End vertical-tabs
