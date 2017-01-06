@@ -10,13 +10,61 @@
 
 .page-header{
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-left: -5px;
   margin-right: -5px;
-  padding: 10px 15px 30px 15px;
-  border-bottom: 1px solid $grey04;
+  padding: 10px 5px 5px 5px;
+  border-bottom: none;
 }
 
+.page-header .profile-image {
+    padding-right: 10px;
+  }
+
+  .page-header .profile-image img{
+    border-radius: 50%;
+  }
+
+  .page-header .user-name{
+    font-size: 20px;
+    font-family: 'robotobold';
+    padding-top:10px;
+    padding-left:115px;
+  }
+
+  .page-header .page-title{
+    font-family: 'robotothin';
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .page-header {
+    .head-nav{
+      text-align:right;
+      margin-top:10px;
+    }
+
+    .headlink{
+      // content: "" ;
+      display:inline-block;
+      border-radius:50%;
+      background-color:$grey04;
+      border:0px solid $grey04;
+      height:80px;
+      width: 80px;
+      min-height:80px;
+      min-width: 80px;
+      // float:right;
+      margin:5px 0px 0px 5px;
+      padding-top:20px;
+      text-align:center;
+      line-height:1.25em;
+    }
+    a:hover{
+      background-color:$grey08;
+      color:white;
+    }
+  }
 
 
 // Jumbotron =====================================================================

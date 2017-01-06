@@ -18,7 +18,8 @@ padding-left:0px;
 padding-right:0px;
 }
 
-.sa-main-section{ min-height: 100%;    
+.sa-main-section{ 
+  min-height: 100%;    
   padding-bottom: 60px;
 }
 
@@ -27,18 +28,6 @@ padding-right:0px;
    min-height: 100%;
 }
 
-// .sa-footer-section{ }
-
-// .sa-footer{
-//   margin-bottom: -10px;
-// }
-// .sa-footer-content { 
-//   background-color:$grey18;
-//   color: $client-colour;
-//   height:40px;
-//   padding-top: 10px;
-//   a{color:white;}
-// }
 
 .new-footer{
   position: fixed;
@@ -54,7 +43,6 @@ padding-right:0px;
   a{color:white;}
 }
 
-// .sa-footer-content a{color:white;}
 
 .sa-main-column{ } // If creating a 2 column layout like dashboard use this.
 
@@ -173,17 +161,12 @@ padding-right:16px;
       background-repeat: repeat-x;
       height: 16px;
       background-position: -4px 0px;
-      margin: 15px -24px 25px -24px;
+      margin: 15px -24px 15px -24px;
     }
 
 
   .row{
     .perf {
-      // background-image: url("../graphics/dot_grey08.png");
-      // background-repeat: repeat-x;
-      // height: 16px;
-      // background-position: -4px 0px;
-      // margin: 15px -20px 25px -20px;
       margin: 15px -9px 25px -9px;
     }
 

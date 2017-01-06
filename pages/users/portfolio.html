@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SARD Style Guide</title>
+    <title>SARD Portfolio</title>
 
     <!-- Bootstrap -->
-    <link href="assets/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="assets/stylesheets/sard-styles.css" rel="stylesheet">
+    <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 8]>
+      <link href="../../assets/stylesheets/bootstrap-ie7fix.min.css" rel="stylesheet">
+    <![endif]-->
+    
     <!-- <link href="assets/css/reset.css" rel="stylesheet"> -->
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,21 +21,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
-  <body id="index-page">
-    <a href="#index-page" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
+  <body id="portfolio">
+  <a href="#portfolio" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
 
   <div class="container sa-top-section">
 
-
-
-    <!-- ============================================================================ -->
+   <!-- ============================================================================ -->
     <!-- Jumbotron -->
     
-    <a href="index.html">
+    <a href="../../index.html">
       <div class="jumbotron">
-          <img src="assets/images/header-placement.png" alt="SARD">
+          <img src="../../assets/images/header-placement.png" alt="SARD">
       </div>
     </a>
 
@@ -52,8 +53,8 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="pages/users/dashboard.html">Dashboard</a></li>
-          <li><a href="pages/users/portfolio.html">Portfolio</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="portfolio.html">Portfolio</a>
           <li><a href="#appraisal">Apprasial</a></li>
           <li><a href="#edocs">eDocs</a></li>
           <li><a href="#msf">MSF</a></li>
@@ -84,7 +85,12 @@
     </nav>  <!-- END NAVIGATION -->
     
 
-    
+    <!-- ============================================================================ -->
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <li><a href="../../index.html">Home</a></li>
+      <li class="active">Portfolio</li>
+    </ol>
 
   </div>  <!-- END top-section -->
 
@@ -93,86 +99,74 @@
   <div class="container sa-main-section">
 
 
-  <!-- ============================================================================ -->
-  <!-- Page Header -->
+    <!-- ============================================================================ -->
+    <!-- Page Header -->
     <div class=" page-header">
 
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-sm-8">
           <div class="profile-image pull-left">
-            <img src="assets/graphics/flower-circle.png" alt="Profile Image">
+            <img src="../../assets/images/profile-image.jpg" alt="Profile Image">
           </div>
 
           <div class="">
-            <div class="ui page-title">
-              Style Guide
+            <div class="user-name">
+              User Name
+            </div>
+            <div class="page-title">
+              Portfolio
             </div>
           </div>
-        </div> <!-- col-xs-12 -->
+        </div> <!-- col-xs-8 -->
+
+        <div class="col-sm-4 head-nav">
+            <a href="" class="headlink">Go to Appraisal</a>
+            <a href="" class="headlink">Download Portfolio</a>
+        </div> <!-- col-xs-4 -->
+
+
+
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
+
+    <div class="row perf"></div>
 
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="row perf"></div>
-    
-    <div class="sa-main-content">
-    
-      <div class="row indent">
-        <div class="col-xs-12">
-            <h2>Welcome to the SARD Appraisal System Style Guide</h2>
-            <h4> Every effort has been made to be as clear as possible, but if you notice anything missing or have any questions, please contact me at <a href="mailto:design@simonsharville.co.uk?Subject=SARD style guide">design@simonsharville.co.uk</a></h4>
-            
-            <h4>The system is built on the Bootstrap framework and wherever possible uses their standard components styled to fit the SARD identity. When this is not possible we have created a SARD specific component, these have a SARD specific sub-class added. i.e. a bootstrap Alert will have a class of <code>class="alert alert-success"</code> while a SARD specific Alert will have a class of <code>class="alert alert-MRv".</code></h4>
-            <h4>For this wireframe we haven't made all the navigation as live links, instead click on any link below to visit that page, to return to this menu just click on the the Header image.</h4>
-
-        </div> <!-- END Column -->
-      </div> <!-- END Row -->
-
-      <div class="row perf"></div>
-
-      <div class="row indent">
-        <div class="col-xs-12">
-          <h2>UI Style Guide</h2>
-        </div> <!-- END Column -->
-      </div> <!-- END Row -->
-
-      <div class="row indent">
-        <div class="col-xs-6 index-list">
-          <ul>Core Elements
-            <li class="link-icon"><a href="pages/ui/ui-core.html#typography">Typography</a></li>
-            <li class="link-icon"><a href="pages/ui/ui-core.html#perforations">Perforations</a></li>
-          </ul> 
-          <ul>Bootstrap components
-              <li class="link-icon"><a href="pages/ui/ui-bootstrap.html#panels">Panels</a></li>
-              <li class="link-icon"><a href="pages/ui/ui-bootstrap.html#buttons">Buttons</a></li> 
-              <li class="link-icon"><a href="pages/ui/ui-bootstrap.html#tabnavs">Tabbed Navs</a></li> 
-              <li class="link-icon"><a href="pages/ui/ui-bootstrap.html#tables">Tables</a></li> 
-              <li class="link-icon"><a href="pages/ui/ui-bootstrap.html#tooltips">Tooltips</a></li> 
-              <li class="link-icon"><a href="pages/ui/ui-bootstrap.html#alerts">Alerts</a></li>  
-          </ul>
-          <ul>SARD components 
-            <li class="link-icon"><a href="pages/ui/ui-sard.html#status-alerts">Status Alerts</a></li>
-            <li class="link-icon"><a href="pages/ui/ui-sard.html#variable-columns">Variable Columns</a></li> 
-            <li class="link-icon"><a href="pages/ui/ui-sard.html#text-links">Text Links</a></li>     
-          </ul>
-        </div> <!-- END Column -->
-
-        <div class="col-xs-6 index-list">
-          <ul>Page designs
-            <li class="link-icon"><a href="pages/users/dashboard.html">Dashboard</a></li> 
-            <li class="link-icon"><a href="pages/users/portfolio.html">Portfolio</a></li>     
-          </ul>
-          <ul>Experiements
-            <li class="link-icon"><a href="pages/experiments/index-sidebar.html">Sidebar - NOT Completed - An attempt at adding a sidebar to the main contant area</a></li>
-          </ul>
-        </div> <!-- END Column -->
-      </div> <!-- END Row -->
+    <div class="row sa-main-content">
 
 
-    </div> <!-- END Main Content -->
-  </div>  <!-- END Main Section -->
+        <div class="col-sm-12">
+            <!-- tabs -->
+            <div class="vertical-tabs ">
+                <ul class="nav tab-nav nav-stacked col-sm-3">
+                    <ul class="nav tab-nav">
+                      <p>1 Good Medical Care (T)</p>
+                      <li class="active"><a href="#a" data-toggle="tab">Length of Stay (T)</a></li>
+                      <li><a href="#a2" data-toggle="tab">Mandatory Data for SHRAD/SHAPPT (T)</a></li>
+                    </ul>
+                    <li><a href="#b" data-toggle="tab">Two</a></li>
+                    <li><a href="#c" data-toggle="tab">Twee</a></li>
+                </ul>
+                <div class="tab-content col-sm-9">
+                    <div class="tab-pane active" id="a">Length of Stay (T) -  Lorem ipsum dolor sit amet, charetra varius rci quis tortor imperdiet venenatis quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+                    <div class="tab-pane" id="a2">Mandatory Data for SHRAD/SHAPPT (T) -  Lorem ipsum dolor sit amet, charetra varius rci quis tortor imperdiet venenatis quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+                    <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+                    <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum auctor accumsan. Duis pharetra
+                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+                </div>
+            </div>
+            <!-- /tabs -->
+        </div>
+
+
+
+      
+      
+
+    </div> <!-- END ROW sa-Main Content -->
+  </div>  <!-- END sa-Main Section -->
   <!-- ============================================================================ -->
   <!-- Footer -->
   
@@ -187,15 +181,14 @@
           </div>
   </div>
   <!-- </div> -->
-
   <!-- ============================================================================ -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/javascripts/bootstrap.min.js"></script>
-    <script src="assets/javascripts/tooltip.js"></script>
+    <script src="../../assets/javascripts/bootstrap.min.js"></script>
+    <script src="../../assets/javascripts/tooltip.js"></script>
 
     <!-- Added SARD Scripts -->
     
@@ -208,6 +201,7 @@
     
     <!-- http://www.paulund.co.uk/how-to-create-an-animated-scroll-to-top-with-jquery -->
     <script type="text/javascript" src="../../assets/javascripts/smoothscroll.js"></script>
+    
 
 
   </body>
