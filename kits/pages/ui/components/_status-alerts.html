@@ -155,17 +155,11 @@ To add the Status Alert, simply add the following classes to any div: status sta
     <p>When creating a table that contains Status Lights  and Link Icons you will need to add certain classes.</p>
     <p>
       To add Status Icons within a table, you should add <code>.status-col</code> to every &lt;th&gt; and &lt;td&gt; within that column. This will make that column 5% the table width and remove the excess padding from those cells. 
-      The Status Lights themselves should be placed within a &lt;div&gt; tag, within the relative &lt;td&gt;. i.e:
+      The Status Lights themselves should be placed within a &lt;div&gt; tag, within the relative &lt;td&gt;. </br>i.e:
       <code>
       &lt;td class="status-col"&gt;
         &lt;div class="status status-alert"&gt;&lt;/div&gt;
-       &lt;/td&gt;
-      </code>
-
-      To include Link Icons before the text link, Add the class <code>.link-icon</code> to the table i.e <code>&lt;table class="table table-hover link-icon”&gt;</code>. This will place the small arrow icon before every text link within the table.
-    </p>
-    <p>
-      Also to hang the text correctly when the link text is longer than 1 line, wrap the link in a &lt;p&gt; tag. AND remove any tags between them.
+       &lt;/td&gt;</code>.
     </p>
     <p>
       Here is an example of a complete responsive table within a panel:
@@ -175,7 +169,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
           <h3 class="panel-title">Table Status Alerts</h3>
         </div>
         <div class="panel-body panel-table">
-          <table class="table table-hover link-icon">
+          <table class="table table-hover">
             <thead>
               <tr>
                 <th class="status-col"></th>
@@ -187,7 +181,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
                 <td class="status-col">
                   <div class="status status-alert"></div>
                 </td>
-                <td>
+                <td class="link-icon">
                   <p><a href="#">Appraisal Jul 2016</a></p>
                 </td>
               </tr>
@@ -195,7 +189,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
                 <td class="status-col">
                   <div class="status status-danger"></div>
                 </td>
-                <td>
+                <td class="link-icon">
                   <p><a href="#">Appraisal Aug 2016</a></p>
                 </td>
               </tr>
@@ -211,7 +205,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
       </div><!-- END Panel -->
 
     <p>
-      An here is the code:
+      And here is the code:
     </p>
 
     <code>
@@ -220,7 +214,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
           &nbsp;&nbsp; &lt;h3 class="panel-title"&gt;Table Status Alerts&lt;/h3&gt;</br>
         &nbsp; &lt;/div&gt;</br>
         &nbsp; &lt;div class="panel-body panel-table"&gt;</br>
-          &nbsp; &nbsp; &lt;table class="table table-hover <strong>link-icon</strong>"&gt;</br>
+          &nbsp; &nbsp; &lt;table class="table table-hover"&gt;</br>
             &nbsp; &nbsp; &nbsp; &lt;thead&gt;</br>
               &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;th class="<strong>status-col</strong>"&gt;&lt;/th&gt;</br>
@@ -232,7 +226,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td class="<strong>status-co</strong>l"&gt;</br>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="status status-alert"&gt;&lt;/div&gt;</br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;</br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;</br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td class="link-icon"&gt;</br>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;a href="#"&gt;Appraisal Jul 2016&lt;/a&gt;&lt;/p&gt;</br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;</br>
               &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</br>
@@ -240,7 +234,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td class="<strong>status-col</strong>"&gt;</br>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="status status-danger"&gt;&lt;/div&gt;</br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;</br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;</br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td class="link-icon"&gt;</br>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;a href="#"&gt;Appraisal Aug 2016&lt;/a&gt;&lt;/p&gt;</br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/td&gt;</br>
               &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</br>
@@ -266,7 +260,7 @@ To add the Status Alert, simply add the following classes to any div: status sta
             </div>
 
             <div class="panel-body panel-table table-responsive">
-              <table class="table table-hover link-icon">
+              <table class="table table-hover ">
                 <thead>
                   <tr>
                     <th class="status-col"></th>
@@ -281,9 +275,9 @@ To add the Status Alert, simply add the following classes to any div: status sta
                     <td class="status-col">
                       <div class="status status-alert"></div>
                     </td>
-                    <td><p><a href="#">Appraisal Jul 2016</a></p></td>
+                    <td class="link-icon"><p><a href="#">Appraisal Jul 2016</a></p></td>
                     <td>01 Jul 2016</td>
-                    <td><p><a href="#" target="_blank">AppraisalPDF </a></p>
+                    <td class="link-icon"><p><a href="#" target="_blank">AppraisalPDF </a></p>
                     <p><a href="#" target="_blank">PortfolioPDF </a></p>
                     <p><a href="#" target="_blank">Medical Educators Framework Areas PDF</a></p>
                     <p><a href="#" target="_blank">SummaryPDF </a></p></td>
@@ -328,5 +322,4 @@ To add the Status Alert, simply add the following classes to any div: status sta
           
   </div> <!-- END column -->
 </div> <!-- END Row -->
-
 
