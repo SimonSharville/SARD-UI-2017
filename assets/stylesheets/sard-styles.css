@@ -1995,21 +1995,73 @@ img.user-guide-cover {
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
 
-.vertical-tabs .tab-nav {
-  padding-left: 0px;
-  background: yellow; }
-  .vertical-tabs .tab-nav ul {
+.portfolio {
+  background: black;
+  padding-bottom: 60px; }
+
+.portfolio .vertical-tabs {
+  background: pink;
+  padding-bottom: 60px;
+  display: flex; }
+  .portfolio .vertical-tabs .nav-stacked {
     background: red; }
-  .vertical-tabs .tab-nav li {
-    background: green; }
+  .portfolio .vertical-tabs .list-head {
+    background: yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black; }
+  .portfolio .vertical-tabs .list-head.last {
+    border-bottom: none; }
+  .portfolio .vertical-tabs .tabs li {
+    background: green;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid black; }
+  .portfolio .vertical-tabs .tabs li:last-of-type {
+    border-bottom: none; }
+  .portfolio .vertical-tabs .tabs li a:hover {
+    background-color: purple; }
+  .portfolio .vertical-tabs .tabs li a:focus, .portfolio .vertical-tabs .active {
+    background: blue; }
+  .portfolio .vertical-tabs .tab-content {
+    background: blue; }
+  .portfolio .vertical-tabs .tab-pane {
+    background: orange;
+    min-height: 100%; }
 
-.vertical-tabs .tab-content {
-  background: blue;
-  min-height: 100%; }
+.appraisal {
+  background: black;
+  padding-bottom: 60px; }
 
-.vertical-tabs .tab-pane {
-  background: orange;
-  min-height: 100%; }
+.appraisal .vertical-tabs {
+  background: pink;
+  padding-bottom: 60px;
+  display: flex; }
+  .appraisal .vertical-tabs .nav-stacked {
+    background: red; }
+  .appraisal .vertical-tabs .list-head {
+    background: yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black; }
+  .appraisal .vertical-tabs .list-head.last {
+    border-bottom: none; }
+  .appraisal .vertical-tabs .tabs li {
+    background: green;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid black; }
+  .appraisal .vertical-tabs .tabs li:last-of-type {
+    border-bottom: none; }
+  .appraisal .vertical-tabs .tabs li a:hover {
+    background-color: purple; }
+  .appraisal .vertical-tabs .tabs li a:focus, .appraisal .vertical-tabs .active {
+    background: blue; }
+  .appraisal .vertical-tabs .tab-content {
+    background: blue; }
+  .appraisal .vertical-tabs .tab-pane {
+    background: orange;
+    min-height: 100%; }
 
 .sidebar {
   z-index: 100;

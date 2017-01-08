@@ -67,7 +67,7 @@
               User Name
             </div>
             <div class="page-title">
-              Portfolio
+              Portfolios
             </div>
           </div>
         </div> <!-- col-xs-8 -->
@@ -90,27 +90,67 @@
     <div class="row sa-main-content">
 
 
-        <div class="col-sm-12">
+        <div class="portfolio col-sm-12">
             <!-- tabs -->
-            <div class="vertical-tabs ">
-                <ul class="nav tab-nav nav-stacked col-sm-3">
-                    <ul class="nav tab-nav">
-                      <p>1 Good Medical Care (T)</p>
-                      <li class="active"><a href="#a" data-toggle="tab">Length of Stay (T)</a></li>
-                      <li><a href="#a2" data-toggle="tab">Mandatory Data for SHRAD/SHAPPT (T)</a></li>
-                    </ul>
-                    <li><a href="#b" data-toggle="tab">Two</a></li>
-                    <li><a href="#c" data-toggle="tab">Twee</a></li>
-                </ul>
-                <div class="tab-content col-sm-9">
-                    <div class="tab-pane active" id="a">Length of Stay (T) -  Lorem ipsum dolor sit amet, charetra varius rci quis tortor imperdiet venenatis quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-                    <div class="tab-pane" id="a2">Mandatory Data for SHRAD/SHAPPT (T) -  Lorem ipsum dolor sit amet, charetra varius rci quis tortor imperdiet venenatis quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-                    <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
-                    <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum auctor accumsan. Duis pharetra
-                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+            <div class="vertical-tabs">
+                <div class="nav-stacked col-xs-3">
+                    <div class="nav tabs">
+                      <a data-toggle="collapse" href="#collapse1"><div class="list-head">Section One</div></a>
+                      <ul id="collapse1" class="collapse in list-group nav tabs">
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'London')">London</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Paris')">Paris</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Tokyo')">Tokyo</a></li>
+                      </ul>
+
+                      <a data-toggle="collapse" href="#collapse2"><div class="list-head last">Section Two</div></a>
+                      <ul id="collapse2" class="collapse list-group nav tabs">
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'New York')">New York</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Istambul')">Istambul</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Hawaii')">Hawaii</a></li>
+                      </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- /tabs -->
+
+                <div class="tab-content col-xs-9">
+                    <div id="First-Pane" class="tabcontent tab-pane active">
+                      <h3>How to use this page</h3>
+                      <p>To come back to this pane, Refresh the page.</p>
+                    </div>
+
+                    <div id="London" class="tabcontent tab-pane">
+                      <h3>London</h3>
+                      <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Paris" class="tabcontent tab-pane">
+                      <h3>Paris</h3>
+                      <p>Paris is the capital of France.</p> 
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent tab-pane">
+                      <h3>Tokyo</h3>
+                      <p>Tokyo is the capital of Japan.</p>
+                    </div>
+
+
+                    <div id="New York" class="tabcontent tab-pane">
+                      <h3>New York</h3>
+                      <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Istambul" class="tabcontent tab-pane">
+                      <h3>Istambul</h3>
+                      <p>Paris is the capital of France.</p> 
+                    </div>
+
+                    <div id="Hawaii" class="tabcontent tab-pane">
+                      <h3>Hawaii</h3>
+                      <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    
+                </div> <!-- END tab-content -->
+            </div> <!-- END Vertical tabs -->
+            
         </div>
 
 
@@ -134,7 +174,6 @@
 
     <!-- Added SARD Scripts -->
     <!-- @import "../../../assets/javascripts/SARD-scripts.html" -->
-    
 
 
   </body>
