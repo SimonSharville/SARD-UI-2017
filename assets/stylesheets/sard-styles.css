@@ -1995,39 +1995,80 @@ img.user-guide-cover {
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
 
+.number {
+  float: left;
+  postition: absolute;
+  display: flex;
+  top: 0px;
+  background: #211F0F;
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  margin-top: -10px;
+  margin-right: 10px;
+  min-width: 40px;
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+  border-right: 1px solid #211F0F; }
+
+.section-title {
+  line-height: 1em;
+  vertical-align: middle; }
+
 .portfolio {
-  background: black;
   padding-bottom: 60px; }
 
 .portfolio .vertical-tabs {
-  background: pink;
   padding-bottom: 60px;
   display: flex; }
   .portfolio .vertical-tabs .nav-stacked {
-    background: red; }
-  .portfolio .vertical-tabs .list-head {
-    background: yellow;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black; }
-  .portfolio .vertical-tabs .list-head.last {
-    border-bottom: none; }
-  .portfolio .vertical-tabs .tabs li {
-    background: green;
     padding-left: 0px;
     padding-right: 0px;
-    border-bottom: 1px solid black; }
-  .portfolio .vertical-tabs .tabs li:last-of-type {
-    border-bottom: none; }
+    border-bottom: 1px; }
+  .portfolio .vertical-tabs .collapsed > .list-head {
+    margin-bottom: 1px; }
+  .portfolio .vertical-tabs .collapsed > .list-head.last {
+    margin-bottom: 0px; }
+  .portfolio .vertical-tabs .list-head {
+    postition: relative;
+    background: #C7C4C2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C7C4C2;
+    min-height: 50px; }
+  .portfolio .vertical-tabs .tabs li {
+    background: #EDEBEB;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #C7C4C2;
+    box-shadow: -1px 0px 0px #C7C4C2 inset;
+    padding-left: 1px; }
+  .portfolio .vertical-tabs .tabs a:hover {
+    color: #211F0F; }
   .portfolio .vertical-tabs .tabs li a:hover {
-    background-color: purple; }
+    background-color: #B5B0B0; }
   .portfolio .vertical-tabs .tabs li a:focus, .portfolio .vertical-tabs .active {
-    background: blue; }
+    background: white;
+    border-right: 1px solid white;
+    border-left: 1px solid #C7C4C2;
+    z-index: 3000;
+    box-sizing: border-box;
+    margin-left: -1px; }
   .portfolio .vertical-tabs .tab-content {
-    background: blue; }
-  .portfolio .vertical-tabs .tab-pane {
-    background: orange;
-    min-height: 100%; }
+    background: tab-pane-colour;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .portfolio .vertical-tabs .tab-content > .tab-pane {
+    border-top: 1px solid #C7C4C2;
+    border-right: 1px solid #C7C4C2;
+    border-bottom: 1px solid #C7C4C2;
+    border-left: 1px solid #C7C4C2;
+    margin-left: -1px;
+    background: tab-pane-colour;
+    min-height: 100%;
+    padding-left: 30px;
+    padding-right: 30px; }
 
 .appraisal {
   background: black;
