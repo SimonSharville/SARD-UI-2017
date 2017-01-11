@@ -2275,77 +2275,53 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
   padding-bottom: 0px; }
 
 /*  bs tabs */
-.bs-vertical-tabs {
-  /*!
+/*!
  * bootstrap-vertical-tabs - v1.1.0
  * https://dbtek.github.io/bootstrap-vertical-tabs
  * 2014-06-06
  * Copyright (c) 2014 Ä°smail Demirbilek
  * License: MIT
- */ }
-  .bs-vertical-tabs .tabs-left, .bs-vertical-tabs .tabs-right {
+ */
+.bs-vertical-tabs {
+  display: flex; }
+  .bs-vertical-tabs .tab-column {
+    background: pink;
+    height: 100%;
+    min-height: 100%; }
+  .bs-vertical-tabs .tabs-left {
     border-bottom: none;
     padding-top: 2px; }
   .bs-vertical-tabs .tabs-left {
     border-right: 1px solid #ddd; }
-  .bs-vertical-tabs .tabs-right {
-    border-left: 1px solid #ddd; }
-  .bs-vertical-tabs .tabs-left > li, .bs-vertical-tabs .tabs-right > li {
+  .bs-vertical-tabs .tabs-left > li {
     float: none;
     margin-bottom: 2px; }
   .bs-vertical-tabs .tabs-left > li {
     margin-right: -1px; }
-  .bs-vertical-tabs .tabs-right > li {
-    margin-left: -1px; }
   .bs-vertical-tabs .tabs-left > li.active > a,
   .bs-vertical-tabs .tabs-left > li.active > a:hover,
   .bs-vertical-tabs .tabs-left > li.active > a:focus {
     border-bottom-color: #ddd;
-    border-right-color: transparent; }
-  .bs-vertical-tabs .tabs-right > li.active > a,
-  .bs-vertical-tabs .tabs-right > li.active > a:hover,
-  .bs-vertical-tabs .tabs-right > li.active > a:focus {
-    border-bottom: 1px solid #ddd;
-    border-left-color: transparent; }
+    border-right-color: transparent;
+    background: white;
+    z-index: 1000; }
   .bs-vertical-tabs .tabs-left > li > a {
     border-radius: 4px 0 0 4px;
     margin-right: 0;
     display: block; }
-  .bs-vertical-tabs .tabs-right > li > a {
-    border-radius: 0 4px 4px 0;
-    margin-right: 0; }
-  .bs-vertical-tabs .vertical-text {
-    margin-top: 50px;
+  .bs-vertical-tabs .tab-content-wrapper {
+    background: yellow;
+    display: flex;
+    height: 100%;
+    min-height: 100%;
+    padding-right: 0px; }
+  .bs-vertical-tabs .tab-content {
+    border: 1px solid black;
+    margin-left: -17px;
+    background: white;
+    width: 100%;
+    min-width: 100%; }
+  .bs-vertical-tabs .tab-pane {
     border: none;
-    position: relative; }
-  .bs-vertical-tabs .vertical-text > li {
-    height: 20px;
-    width: 120px;
-    margin-bottom: 100px; }
-  .bs-vertical-tabs .vertical-text > li > a {
-    border-bottom: 1px solid #ddd;
-    border-right-color: transparent;
-    text-align: center;
-    border-radius: 4px 4px 0px 0px; }
-  .bs-vertical-tabs .vertical-text > li.active > a,
-  .bs-vertical-tabs .vertical-text > li.active > a:hover,
-  .bs-vertical-tabs .vertical-text > li.active > a:focus {
-    border-bottom-color: transparent;
-    border-right-color: #ddd;
-    border-left-color: #ddd; }
-  .bs-vertical-tabs .vertical-text.tabs-left {
-    left: -50px; }
-  .bs-vertical-tabs .vertical-text.tabs-right {
-    right: -50px; }
-  .bs-vertical-tabs .vertical-text.tabs-right > li {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
-  .bs-vertical-tabs .vertical-text.tabs-left > li {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    height: 100%;
+    min-height: 100%; }
