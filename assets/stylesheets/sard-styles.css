@@ -2325,3 +2325,57 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     border: none;
     height: 100%;
     min-height: 100%; }
+
+/*  bs tabs */
+/*!
+ * bootstrap-vertical-tabs - v1.1.0
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-06-06
+ * Copyright (c) 2014 Ä°smail Demirbilek
+ * License: MIT
+ */
+.bs-vertical-tabs-2 {
+  display: flex;
+  margin-right: -10px; }
+  .bs-vertical-tabs-2 .tab-column {
+    padding-left: 0px;
+    margin-bottom: -73px; }
+  .bs-vertical-tabs-2 .nav-tabs > li {
+    border: none; }
+  .bs-vertical-tabs-2 .nav-tabs > li > a {
+    border: none; }
+  .bs-vertical-tabs-2 .nav-tabs > li.active > a {
+    border: none; }
+  .bs-vertical-tabs-2 .tabs-left {
+    border-bottom: none;
+    padding-top: 0px; }
+  .bs-vertical-tabs-2 .tabs-left > li {
+    float: none;
+    margin-bottom: 2px;
+    border: 1px solid red; }
+  .bs-vertical-tabs-2 .tabs-left > li {
+    margin-right: -2px; }
+  .bs-vertical-tabs-2 .tabs-left > li.active > a,
+  .bs-vertical-tabs-2 .tabs-left > li.active > a:hover,
+  .bs-vertical-tabs-2 .tabs-left > li.active > a:focus {
+    border-right: none;
+    background: white;
+    z-index: 1000; }
+  .bs-vertical-tabs-2 .tabs-left > li > a {
+    border-radius: 0px;
+    margin-right: 0; }
+  .bs-vertical-tabs-2 .tab-content-wrapper {
+    display: flex;
+    height: 100%;
+    min-height: 100%;
+    padding-right: 0px; }
+  .bs-vertical-tabs-2 .tab-content {
+    border: 1px solid red;
+    margin-left: -16px;
+    background: white;
+    width: 100%;
+    min-width: 100%;
+    padding: 0px; }
+  .bs-vertical-tabs-2 .tab-pane {
+    border: none;
+    margin-bottom: -73px; }

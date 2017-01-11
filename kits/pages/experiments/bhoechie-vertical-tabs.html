@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SARD BS Vertical Tabs</title>
+    <title>SARD Index + Sidebar</title>
 
     <!-- Bootstrap -->
     <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet">
@@ -22,8 +22,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body id="bs-vertical-tabs">
-  <a href="#bs-vertical-tabs" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
+  <body id="bhoechie-vertical-tabs">
+  <a href="#bhoechie-vertical-tabs" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
 
   <div class="container sa-top-section">
@@ -89,7 +89,7 @@
     <ol class="breadcrumb">
       <li><a href="../../index.html">Home</a></li>
       <li>Experiments</li>
-      <li class="active">BS Vertical Tabs</li>
+      <li class="active">Bhoechie Vertical Tabs</li>
     </ol>
     
 
@@ -111,7 +111,7 @@
 
           <div class="">
             <div class="ui page-title">
-              BS Vertical Tabs
+              Bhoechie Vertical Tabs
             </div>
           </div>
 
@@ -124,40 +124,72 @@
 
     <div class=" sa-main-content">
 
-      <!-- BS Vertical Tabs -->
-      <!-- http://bootsnipp.com/snippets/nP8E7 -->
+      <!-- Vertical Tabs -->
+      <!-- http://bootsnipp.com/snippets/featured/simple-vertical-tab -->
 
       <div class="row">
-        <div class="bs-vertical-tabs">
-          <div  class="col-xs-12">
-            <h3>Left Tabs</h3>
-            <hr/>
-            <div class="col-xs-3 tab-column">
-                <!-- required for floating -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-left">
-                    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                    <li><a href="#profile" data-toggle="tab">Profile</a></li>
-                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
-                    <li><a href="#settings" data-toggle="tab">Settings</a></li>
-                </ul>
+          <div class="col-lg-5 col-md-5 col-sm-8 col-xs-9 bhoechie-tab-container">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+              <div class="list-group">
+                <a href="#" class="list-group-item active text-center">
+                  <h4 class="glyphicon glyphicon-plane"></h4><br/>Flight
+                </a>
+                <a href="#" class="list-group-item text-center">
+                  <h4 class="glyphicon glyphicon-road"></h4><br/>Train
+                </a>
+                <a href="#" class="list-group-item text-center">
+                  <h4 class="glyphicon glyphicon-home"></h4><br/>Hotel
+                </a>
+                <a href="#" class="list-group-item text-center">
+                  <h4 class="glyphicon glyphicon-cutlery"></h4><br/>Restaurant
+                </a>
+                <a href="#" class="list-group-item text-center">
+                  <h4 class="glyphicon glyphicon-credit-card"></h4><br/>Credit Card
+                </a>
+              </div>
             </div>
-            <div class="col-xs-9 tab-content-wrapper">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">Home Tab.</div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et convallis ligula. Phasellus quis odio vel urna auctor vestibulum. Suspendisse viverra ex ut auctor tincidunt. Curabitur blandit tortor sem, ut suscipit neque tristique in. Morbi placerat est eu augue elementum viverra. Nulla ac bibendum erat. Pellentesque et sapien eleifend, ultrices libero eget, finibus est. Suspendisse in velit eu tellus convallis sagittis. Nam nec bibendum lorem, et efficitur magna. Mauris sagittis nisl rhoncus dolor consequat, a convallis metus hendrerit. Praesent tempus tempus mauris a mattis. Nulla facilisi. Nullam molestie facilisis metus sed suscipit. Donec eu magna ante. Donec vulputate eget nisi a interdum.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et convallis ligula. Phasellus quis odio vel urna auctor vestibulum. Suspendisse viverra ex ut auctor tincidunt. Curabitur blandit tortor sem, ut suscipit neque tristique in. Morbi placerat est eu augue elementum viverra. Nulla ac bibendum erat. Pellentesque et sapien eleifend, ultrices libero eget, finibus est. Suspendisse in velit eu tellus convallis sagittis. Nam nec bibendum lorem, et efficitur magna. Mauris sagittis nisl rhoncus dolor consequat, a convallis metus hendrerit. Praesent tempus tempus mauris a mattis. Nulla facilisi. Nullam molestie facilisis metus sed suscipit. Donec eu magna ante. Donec vulputate eget nisi a interdum.</p>
-                    </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                <!-- flight section -->
+                <div class="bhoechie-tab-content active">
+                    <center>
+                      <h1 class="glyphicon glyphicon-plane" style="font-size:14em;color:#55518a"></h1>
+                      <h2 style="margin-top: 0;color:#55518a">Cooming Soon</h2>
+                      <h3 style="margin-top: 0;color:#55518a">Flight Reservation</h3>
+                    </center>
+                </div>
+                <!-- train section -->
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-road" style="font-size:12em;color:#55518a"></h1>
+                      <h2 style="margin-top: 0;color:#55518a">Cooming Soon</h2>
+                      <h3 style="margin-top: 0;color:#55518a">Train Reservation</h3>
+                    </center>
+                </div>
+    
+                <!-- hotel search -->
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-home" style="font-size:12em;color:#55518a"></h1>
+                      <h2 style="margin-top: 0;color:#55518a">Cooming Soon</h2>
+                      <h3 style="margin-top: 0;color:#55518a">Hotel Directory</h3>
+                    </center>
+                </div>
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-cutlery" style="font-size:12em;color:#55518a"></h1>
+                      <h2 style="margin-top: 0;color:#55518a">Cooming Soon</h2>
+                      <h3 style="margin-top: 0;color:#55518a">Restaurant Diirectory</h3>
+                    </center>
+                </div>
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-credit-card" style="font-size:12em;color:#55518a"></h1>
+                      <h2 style="margin-top: 0;color:#55518a">Cooming Soon</h2>
+                      <h3 style="margin-top: 0;color:#55518a">Credit Card</h3>
+                    </center>
                 </div>
             </div>
-            <div class="clearfix"></div>
-          </div>
-
-        </div> <!-- END bs-vertical-tabs -->
+        </div>
       </div> <!-- END Row -->
 
     </div> <!-- END Main Content -->
@@ -211,6 +243,19 @@
     
     <!-- http://bootsnipp.com/snippets/featured/simple-vertical-tab -->
     <script type="text/javascript" src="../../assets/javascripts/sard/simple-vertical-tabs.js"></script>
+
+    <script>
+    $(document).ready(function() {
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+});
+    </script>
 
 
   </body>
