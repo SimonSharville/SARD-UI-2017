@@ -111,6 +111,7 @@ $tab-pane-colour:   white;
     // height:100%; // added
     // min-height:100%; // added
     margin-bottom:-73px; // This removes the strange spacing below
+    margin-bottom:0px\9; // IE8 and below
   }
 
 }// End BS vertical-tabs-2
