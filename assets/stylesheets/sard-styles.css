@@ -2338,6 +2338,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
   display: flex;
   margin-right: -10px; }
   .bs-vertical-tabs-2 .tab-column {
+    background: pink;
     padding-left: 0px;
     margin-bottom: -73px; }
   .bs-vertical-tabs-2 .nav-tabs > li {
@@ -2370,7 +2371,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     min-height: 100%;
     padding-right: 0px; }
   .bs-vertical-tabs-2 .tab-content {
-    border: 1px solid red;
+    border: 1px solid green;
+    border: 1px solid yellow\9;
     margin-left: -16px;
     background: white;
     width: 100%;
@@ -2378,4 +2380,5 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     padding: 0px; }
   .bs-vertical-tabs-2 .tab-pane {
     border: none;
-    margin-bottom: -73px; }
+    margin-bottom: -73px;
+    margin-bottom: 0px\9; }

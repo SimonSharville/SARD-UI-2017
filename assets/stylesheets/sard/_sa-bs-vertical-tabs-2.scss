@@ -26,7 +26,7 @@ $tab-pane-colour:   white;
 
 
   .tab-column{ // added
-    // background:pink; // added
+    background:pink; // added
     // height:100%; // added
     // min-height:100%; // added
     padding-left:0px; // added
@@ -95,15 +95,14 @@ $tab-pane-colour:   white;
   }
 
   .tab-content{
-    border:1px solid red; // added
+    border:1px solid green; // added
+    border:1px solid yellow\9; // ie* Hack
     margin-left:-16px; // added
     background:white; // added
     width:100%; // added
     min-width:100%; // added
     padding:0px;
-    <!--[if IE 8]>
-    <style>border:1px solid green;</style>
-    <![endif]-->
+  
 
   }  
 
@@ -113,9 +112,8 @@ $tab-pane-colour:   white;
     // height:100%; // added
     // min-height:100%; // added
     margin-bottom:-73px; // This removes the strange spacing below
-    <!--[if IE 8]>
-    <style>margin-bottom:0px;</style>
-    <![endif]-->
+    margin-bottom: 0px\9; // ie* Hack
+  
   }
 
 }// End BS vertical-tabs-2
